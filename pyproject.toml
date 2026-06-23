@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meow88x31"
+version = "1.0.0"
+description = "Interactive 88x31 badge maker with pride flags, animations, and a shitton of options"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Energyboy-OwO" },
+]
+keywords = ["88x31", "badge", "pride-flag", "pixel-art", "button"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pillow>=10.0",
+    "click>=8.0",
+    "questionary>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gayboi-club/meow88x31"
+Repository = "https://github.com/gayboi-club/meow88x31"
+"Bug Tracker" = "https://github.com/gayboi-club/meow88x31/issues"
+
+[project.scripts]
+meow88x31 = "meow88x31.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
